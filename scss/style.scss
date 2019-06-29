@@ -1,0 +1,30 @@
+@import 'reset.scss';
+@import 'variable.scss';
+@import 'bases.scss';
+
+
+.header{
+    @extend %flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %container;
+    @extend %p-style;
+    .logo{
+        img{
+            height:$size02;
+        }
+    }
+    nav{
+        background-color: $red;
+        .nav-ul{
+            @extend %flex;
+            li{
+                margin-right: $size01;
+                color:$white;
+            }
+        }
+    }
+   
+}
+
+
